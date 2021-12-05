@@ -1,0 +1,214 @@
+.recommendations {
+   &__items {
+      margin: 0;
+   }
+   &__wrap {
+      margin-bottom: 128px;
+      margin-top: 128px;
+   }
+}
+
+.containerFull {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	align-items: center;
+}
+
+.productSlide {
+   &__prev-btn {
+      color: #000000;
+      border: none;
+      background-color: rgba(42, 42, 42, 0.15);
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+         svg {
+            fill: #F16D7F;
+         }
+      }
+   }
+   &__next-btn {
+      color: #000000;
+      border: none;
+      background-color: rgba(42, 42, 42, 0.15);
+      width: 47px;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      cursor: pointer;
+      &:hover {
+         svg {
+            fill: #F16D7F;
+         }
+      }
+   }
+   &__prev-arrow {
+      width: 12px;
+      height: 21px;
+      fill: #000000;
+   }
+   &__next-arrow {
+      width: 12px;
+      height: 21px;
+      fill: #000000;
+   }
+   &__next {
+      right: 0;
+      top: 50%;
+      flex: 0 0 auto;
+      display: flex;
+      position: absolute;
+   }
+   &__prev {
+      left: 0;
+      top: 50%;
+      flex: 0 0 auto;
+      display: flex;
+      position: absolute;
+   }
+   &__image {
+      flex: 1 1 100%;
+      background-color: #F7F7F7;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+   }
+}
+
+.productInformation {
+   &__body {
+      background-color: #ffffff;
+      padding: 55px 0 65px 0;
+      border: 1px solid #EAEAEA;
+      margin-top: -55px;
+      z-index: 2;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+   }
+   &__bodyInfo {
+      max-width: 640px;
+      border-bottom: 1px solid #EAEAEA;
+      margin: 0 0 65px 0;
+   }
+   &__bodyOptions {
+      max-width: 640px;
+      ul {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+      }
+      li {
+         list-style: none;
+         margin: 0 23px 0 0;
+         &:last-child {
+            margin: 0;
+         }
+      }
+      svg {
+         fill: #6F6E6E;
+         margin-left: 10px;
+         margin-bottom: 2px;
+         width: 10px;
+         height: 5px;
+      }
+      a {
+         text-decoration: none;
+         color: #6F6E6E;
+         font-size: 14px;
+         font-weight: normal;
+      }
+   }
+   &__addButton {
+      max-width: 640px;
+      margin-top: 50px;
+      button {
+         width: 212px;
+         height: 50px;
+         border: 1px solid #FF6A6A;
+         background-color: #ffffff;
+         font-size: 16px;
+         display: flex;
+         color: #F26376;
+         justify-content: center;
+         align-items: center;
+         &:hover {
+            cursor: pointer;
+            color: white;
+            background-color: #F16D7F;
+            svg {
+               fill: #ffffff;
+            }
+         }
+      }
+      svg {
+         fill: #EF5B70;
+         width: 26px;
+         height: 24px;
+         margin: 0 23px 0 0;
+      }
+   }
+   &__colection {
+      p {
+         color: #F16D7F;
+         font-size: 14px;
+         font-family: 'LatoLight';
+         text-align: center;
+         line-height: 17px;
+         padding: 0 0 15px 0;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 63px;
+            background-color: #F16D7F;
+            position: absolute;
+            top: 32px;
+         }
+      }
+   }
+   &__title {
+      h2 {
+         font-size: 18px;
+         line-height: 22px;
+         color: #4D4D4D;
+         text-align: center;
+         font-family: 'LatoLight';
+         margin: 18px 0;
+      }
+   }
+   &__text {
+      p {
+         font-family: 'LatoLight';
+         font-size: 14px;
+         color: #5E5E5E;
+         text-align: center;
+         margin: 35px 0;
+      }
+   }
+   &__price {
+      p {
+         font-family: 'LatoLight';
+         font-size: 24px;
+         color: #EF5B70;
+         text-align: center;
+      }
+      margin: 0 0 65px 0;
+   }
+}
