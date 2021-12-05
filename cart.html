@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <title>lesson 4 - Препроцессоры: применение на практике</title>
+</head>
+
+<body>
+   <header>
+      <div class="header">
+         <div class="container header__wrap">
+            <div class="header__right">
+               <a href="#" class="header__logo-link"><img src="./img/icon__logo.svg" alt="logo"></a>
+               <img src="./img/icon__search.svg" class="header__search" alt="поиск">
+            </div>
+            <div class="header__left">
+               <a href="#" class="header__itemLink">
+                  <img src="./img/icon__burger.svg" class="header__item" alt="меню">
+               </a>
+               <a href="#" class="header__itemLink">
+                  <img src="./img/person_icon.svg" class="header__item" alt="личный кабинет">
+               </a>
+               <a href="#" class="header__itemLink">
+                  <img src="./img/icon__cart.svg" class="header__item" alt="корзина">
+                  <span class="header__left-cartIcon">5</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="breadcrumbs">
+         <div class="container breadcrumbs__wrap">
+            <div class="breadcrumbs__left">
+               <h1 class="breadcrumbs__title">NEW ARRIVALS</h1>
+            </div>
+            <div class="breadcrumbs__right">
+               <nav class="breadcrumbs__nav">
+                  <ul>
+                     <li><a href="#">HOME</a></li>
+                     <li><a href="#">MEN</a></li>
+                     <li class="breadcrumbs__nav-active"><a href="#">NEW ARRIVALS</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </section>
+
+      <section class="cartContent">
+         <div class="container cartContent__body">
+            <div class="cartContent__products">
+               <div class="cartContent__items">
+                  <div class="cartContent__items-item">
+                     <div class="cartContent__items-left">
+                        <img src="./img/products/3.png" alt="товар_1">
+                     </div>
+
+                     <div class="cartContent__items-right">
+                        <p class="cartContent__items-title">MANGO PEOPLE T-SHIRT</p>
+                        <p class="cartContent__items-text">Price: <span>$300</span></p>
+                        <p class="cartContent__items-text">Color: Red</p>
+                        <p class="cartContent__items-text">Size: Xl</p>
+                        <div class="cartContent__items-Quantity">
+                           <p class="cartContent__items-text">Quantity:</p>
+                           <input type="number" name="quantity_1" id="quantity_1" placeholder="2">
+                        </div>
+                        <div class="cartContent__items-close">
+                           <button>
+                              <svg width="18" height="18" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"
+                                    fill="#6F6E6E"></path>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="cartContent__items-item">
+                     <div class="cartContent__items-left">
+                        <img src="./img/products/2.png" alt="товар_2">
+                     </div>
+
+                     <div class="cartContent__items-right">
+                        <p class="cartContent__items-title">MANGO PEOPLE T-SHIRT</p>
+                        <p class="cartContent__items-text">Price: <span>$300</span></p>
+                        <p class="cartContent__items-text">Color: Red</p>
+                        <p class="cartContent__items-text">Size: Xl</p>
+                        <div class="cartContent__items-Quantity">
+                           <p class="cartContent__items-text">Quantity:</p>
+                           <input type="number" name="quantity_2" id="quantity_2" placeholder="2">
+                        </div>
+                     </div>
+
+                     <div class="cartContent__items-close">
+                        <button>
+                           <svg width="18" height="18" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                 d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z"
+                                 fill="#6F6E6E"></path>
+                           </svg>
+                        </button>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="cartContent__btns">
+                  <button class="cartContent__btns-clear">CLEAR SHOPPING CART</button>
+                  <button class="cartContent__btns-continue">CONTINUE SHOPPING</button>
+               </div>
+            </div>
+
+            <div class="cartContent__formAccess">
+               <div class="cartContent__formAccess-body">
+                  <p class="cartContent__formAccess-title">SHIPPING ADRESS</p>
+                  <form action="#" class="cartContent__formAccess-form">
+                     <input type="text" class="cartContent__formAccess-city" placeholder="Bangladesh" id="city">
+                     <input type="text" class="cartContent__formAccess-state" placeholder="State" id="State">
+                     <input type="text" class="cartContent__formAccess-postCode" placeholder="Postcode / Zip"
+                        id="Postcode">
+                     <input type="submit" class="cartContent__formAccess-btn" value="get a quote">
+                  </form>
+               </div>
+
+               <div class="cartContent__formAccess-result">
+                  <div class="cartContent__formAccess-subTotal">
+                     <p>SUB TOTAL</p>
+                     <p>$900</p>
+                  </div>
+
+                  <div class="cartContent__formAccess-grandTotal">
+                     <p>GRAND TOTAL</p>
+                     <p>$900</p>
+                  </div>
+
+                  <div class="cartContent__formAccess-checkout">
+                     <button>PROCEED TO CHECKOUT</button>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="subscribe-banner">
+         <div class="container">
+            <div class="subscribe-banner__wrap">
+
+               <div class="subscribe-banner__left">
+                  <img src="./img/footer__foto.png" alt="autor">
+                  <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+               </div>
+
+               <div class="subscribe-banner__right">
+                  <h3>SUBSCRIBE</h3>
+                  <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                  <form action="#" method="post">
+                     <input type="email" id="mail" name="user_mail" placeholder="Enter Your Email"
+                        class="subscribe-banner__input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                     <input type="submit" value="Subscribe" class="subscribe-banner__btn">
+                  </form>
+               </div>
+            </div>
+
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="footer__wrap">
+               <div class="footer__left">
+                  <p>© 2021 Brand All Rights Reserved.</p>
+               </div>
+               <div class="footer__right">
+                  <a href="https://www.facebook.com/" class="footer__btn-facebook" target="_blank"></a>
+                  <a href="https://www.instagram.com/" class="footer__btn-instagram" target="_blank"></a>
+                  <a href="https://www.pinterest.ru/" class="footer__btn-pinterest" target="_blank"></a>
+                  <a href="https://twitter.com/" class="footer__btn-twitter" target="_blank"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
