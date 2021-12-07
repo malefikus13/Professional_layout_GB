@@ -1,0 +1,206 @@
+.cartContent {
+   margin-top: 96px;
+   margin-bottom: 128px;
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__products {
+      display: flex;
+      flex-flow: column;
+      flex: 0 0 652px;
+   }
+   &__items-item {
+      display: flex;
+      position: relative;
+      margin-bottom: 40px;
+      box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+      &:last-child {
+         margin: 0;
+      }
+   }
+   &__items-left {
+      width: 262px;
+      height: 306px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+         width: 100%;
+         flex-shrink: 0;
+         height: auto;
+      }
+   }
+   &__items-right {
+      display: flex;
+      max-width: 262px;
+      flex-flow: column;
+      padding: 22px 31px;
+   }
+   &__formAccess {
+      display: flex;
+      flex-flow: column;
+   }
+   &__items-close {
+      position: absolute;
+      right: 22px;
+      top: 28px;
+      button {
+         border: none;
+         background: none;
+         cursor: pointer;
+      }
+      svg {
+         fill: #575757;
+         width: 18px;
+         height: 18px;
+      }
+      &:hover svg {
+         transform: rotateY(360deg);
+         transition: 1s;
+         perspective: 1000px;
+      }
+   }
+   &__items-title {
+      color: #222222;
+      font-size: 24px;
+      font-weight: normal;
+      margin-bottom: 42px;
+   }
+   &__items-text {
+      color: #575757;
+      font-size: 22px;
+      font-weight: normal;
+      padding-bottom: 6px;
+      span {
+         color: #ef5b70;
+      }
+   }
+   &__items-Quantity {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      input {
+         height: 25px;
+         width: 44px;
+         border: 1px solid #eaeaea;
+         padding: 0 0 0 5px;
+         margin-left: 25px;
+      }
+   }
+   &__btns {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 72px;
+   }
+   &__btns-clear {
+      color: #000000;
+      font-size: 14px;
+      font-family: "LatoLight";
+      border: 1px solid #a4a4a4;
+      padding: 17px 41px;
+      cursor: pointer;
+      background: none;
+   }
+   &__btns-continue {
+      color: #000000;
+      font-size: 14px;
+      font-family: "LatoLight";
+      border: 1px solid #a4a4a4;
+      padding: 17px 41px;
+      cursor: pointer;
+      background: none;
+   }
+   &__formAccess-title {
+      color: #222222;
+      font-size: 16px;
+      font-family: "LatoLight";
+      margin-bottom: 20px;
+   }
+   &__formAccess-body {
+      max-width: 360px;
+   }
+   &__formAccess-city {
+      height: 45px;
+      width: 360px;
+      border: 1px solid #a4a4a4;
+      margin-bottom: 20px;
+      padding: 0 18px;
+   }
+   &__formAccess-state {
+      height: 45px;
+      width: 360px;
+      border: 1px solid #a4a4a4;
+      margin-bottom: 20px;
+      padding: 0 18px;
+   }
+   &__formAccess-postCode {
+      height: 45px;
+      width: 360px;
+      border: 1px solid #a4a4a4;
+      margin-bottom: 20px;
+      padding: 0 18px;
+   }
+   &__formAccess-btn {
+      color: #4a4a4a;
+      font-size: 11px;
+      font-family: "LatoLight";
+      text-transform: uppercase;
+      padding: 10px 14px;
+      border: 1px solid #a4a4a4;
+      cursor: pointer;
+      background: none;
+   }
+   &__formAccess-result {
+      margin-top: 57px;
+      padding: 39px 28px 44px 44px;
+      background-color: #f5f3f3;
+   }
+   &__formAccess-subTotal {
+      display: flex;
+      justify-content: end;
+      p {
+         font-size: 11px;
+         color: #4a4a4a;
+         &:first-child {
+            margin-right: 25px;
+         }
+      }
+   }
+   &__formAccess-grandTotal {
+      display: flex;
+      justify-content: end;
+      margin-top: 12px;
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 21px;
+      p {
+         font-size: 16px;
+         color: #222222;
+         font-family: "LatoLight";
+         &:first-child {
+            margin-right: 25px;
+         }
+         &:last-child {
+            color: #f16d7f;
+            font-size: 16px;
+            font-weight: bold;
+         }
+      }
+   }
+   &__formAccess-checkout {
+      margin-top: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      button {
+         font-size: 16px;
+         color: #ffffff;
+         font-family: "LatoLight";
+         background-color: #f16d7f;
+         border: none;
+         padding: 15px 43px;
+         cursor: pointer;
+      }
+   }
+}
